@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 st.title("Car Prices Dataset")
 st.write("This dataset provides a comprehensive collection of specifications and pricing details for a diverse range of cars. It serves as a valuable resource for automotive enthusiasts, researchers, and industry professionals looking to analyze and understand the intricate relationships between various car attributes and their market prices.")
 def load_data(nrows):
-    data = pd.read_csv("C:/Users/dell/OneDrive/Desktop/MSBA 325/carprices.csv", nrows=nrows)
+    data = pd.read_csv("carprices.csv", nrows=nrows)
     lowercase = lambda x: str(x).lower()
     data.rename(lowercase, axis='columns', inplace=True)
     return data
